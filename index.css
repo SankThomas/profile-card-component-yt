@@ -62,7 +62,7 @@ body {
   width: 6rem;
   position: absolute;
   left: 50%;
-  bottom: -2rem;
+  bottom: -3rem;
   transform: translateX(-50%);
   border: 5px solid #fff;
 }
