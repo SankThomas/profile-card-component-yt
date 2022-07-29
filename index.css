@@ -59,7 +59,7 @@ body {
 
 .container article:first-child div img {
   border-radius: 50%;
-  width: 5rem;
+  width: 6rem;
   position: absolute;
   left: 50%;
   bottom: -2rem;
