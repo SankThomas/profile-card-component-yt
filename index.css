@@ -4,21 +4,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style-type: none;
 }
-
+html {
+  font-size: 62.5%;
+}
 img {
   max-width: 100%;
   width: 100%;
 }
-
-ul {
-  list-style-type: none;
-}
-
 body {
   font-family: "Kumbh Sans", sans-serif;
-  font-size: 18px;
-  padding: 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,6 +29,7 @@ body {
   top: -50%;
   left: -20%;
   z-index: -1;
+  max-width: 100%;
 }
 
 .bg-bottom {
@@ -40,13 +37,14 @@ body {
   bottom: -50%;
   right: -20%;
   z-index: -1;
+  max-width: 100%;
 }
 
 .container {
   background-color: #fff;
-  width: 100%;
-  max-width: 500px;
-  border-radius: 0.625rem;
+  /* width: 100%; */
+  max-width: 50rem;
+  border-radius: 10px;
 }
 
 .container article:first-child {
@@ -54,26 +52,27 @@ body {
 }
 
 .container article:first-child img {
-  border-radius: 0.625rem 0.625rem 0 0;
+  border-radius: 10px 10px 0 0;
 }
 
 .container article:first-child div img {
   border-radius: 50%;
-  width: 6rem;
+  width: 25%;
+  border: 5px solid #fff;
   position: absolute;
   left: 50%;
-  bottom: -3rem;
-  transform: translateX(-50%);
-  border: 5px solid #fff;
+  top: 100%;
+  transform: translate(-50%, -50%);
 }
 
 .container article:nth-child(2) {
   text-align: center;
-  margin-top: 3rem;
+  margin-top: 6rem;
 }
 
 .container article:nth-child(2) h1 {
   color: hsl(229, 23%, 23%);
+  font-size: 2.4rem;
 }
 
 .container article:nth-child(2) span {
@@ -85,6 +84,7 @@ body {
   color: hsl(227, 10%, 46%);
   margin-top: 1rem;
   padding-bottom: 2rem;
+  font-size: 1.6rem;
 }
 
 .container article:nth-child(3) {
@@ -101,18 +101,14 @@ body {
 .container article:nth-child(3) ul li {
   font-weight: 700;
   color: hsl(229, 23%, 23%);
-  font-size: 1.4rem;
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; */
+  font-size: 2rem;
   text-align: center;
 }
 
 .container article:nth-child(3) ul li span {
   display: block;
   font-weight: 400;
-  font-size: 0.9rem;
+  font-size: 1.6rem;
   color: hsl(227, 10%, 46%);
   letter-spacing: 0.15rem;
   margin-top: 0.3rem;
@@ -127,4 +123,12 @@ body {
 
 .attribution a {
   color: hsl(228, 53%, 18%);
+}
+@media (max-width: 375px) {
+  html {
+    font-size: 50%;
+  }
+  .container {
+    margin: 1rem;
+  }
 }
